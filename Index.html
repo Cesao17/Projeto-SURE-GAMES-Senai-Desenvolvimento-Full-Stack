@@ -1,21 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="César Augusto Pezzetta Willemberg">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="César Augusto Pezzetta Willemberg" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
     <title>SURGE GAMES</title>
-    <meta name="description" content="Descrição do site">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="icon" href="./img/favicon/apple-touch-icon.png" type="image/x-icon">
-    
-</head>
-<body>
+    <meta name="description" content="Descrição do site" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="icon"
+      href="./img/favicon/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="./Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <header class="cabecalho">
+      <div class="container" >
+        <div class="row align-items-center">
+          <div class="col logo">SURGE GAMES</div>
+          <!--barra de pesquisa-->
+          <form class="d-flex col search" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="max-width: 200px"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <!--/barra de pesquisa-->
+          <!--login-->
+          <div class="col-auto login">
+            <div class="d-flex align-items-center">
+              <img src="./img/login.png" alt="Ícone de Login" class="me-2" />
+              <div>
+                <a>
+                  Faça <strong>LOGIN</strong> ou <br /><strong
+                    >CADASTRE-SE</strong
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--login-->
 
+          <div class="col-auto support">
+            <div class="d-flex align-items-center">
+            <img src="./img/Suporte.png">
+            </div>
+          </div>
+
+          <div class="col-auto support">
+            <div class="d-flex align-items-center">
+            <img src="./img/Favoritos.png">
+            </div>
+          </div>
+
+          <div class="col-auto support">
+            <div class="d-flex align-items-center">
+            <img src="./img/Carrinho.png">
+            </div>
+          </div>        
+      </div>
+    </header>
+    <!--header-->
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark text-center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse row align-items-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle col"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                DEPARTAMENTOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item col">
+              <a class="nav-link active" aria-current="page" href="#"
+                >MONTE SEU PC</a
+              >
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" href="#">OFERTAS DO DIA</a>
+            </li>
+            <li class="nav-item dropdown row">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                LANÇAMENTOS
+              </a>
+              <ul class="dropdown-menu col">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link disabled">BAIXE O APP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/navbar-->
+
+    <main class="conteudo">
+      <section class="conteudo-principal" id="carrousselmargin">
+        <!--Carrousel-->
+        <div id="carouselExampleIndicators" class="container-sm carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner" id="carrousel1">
+            <div class="carousel-item active">
+              <img
+                src="./img/carousel/Rectangle1.png"
+                class="d-block w-100"
+                alt="imagem-1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/carousel/Rectangle2.png"
+                class="d-block w-100"
+                alt="Imagem-2"
+                id="imagem-corrousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/carousel/Rectangle3.png"
+                class="d-block w-100"
+                alt="Imagem-3"
+                id="imagem-corrousel"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--/Carrousel-->
         
+        <div class="container sobrep text-center">
+          <h1>JOGOS EM DESTAQUES</h1>
+        </div>
+      </section>
+      <section class="conteudo-secundario container text-center">
+        <div class="segunda-parte row">
+          <div class="col destaques">
+            <img src="./img/jogos_em_destaques/bf2042.png">
+            <img src="./img/jogos_em_destaques/fifa23.png">
+            <img src="./img/jogos_em_destaques/thewitcher.png">
+            <img src="./img/jogos_em_destaques/diablo.png">
+            <img src="./img/jogos_em_destaques/re4rmk.png">
+          </div>
+
+        </div>
+      </section>
 
 
 
@@ -26,7 +249,119 @@
 
 
 
-<script src="./JS/script.js"></script>
-<script src="./Bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>   
-</body>
+
+      <section class="conteudo-terceario"></section>
+    </main>
+
+
+    <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <h1>Logo</h1>
+          </div>
+          
+          <ul class="footer-list">
+            <li><h3>Departamentos</h3></3></li>
+            <li><a href="#" class="footer-link">Hardware</a></li>
+            <li><a href="#" class="footer-link">Celular e Smartphone</a></li>
+            <li><a href="#" class="footer-link">Periféricos</a></li>
+            <li><a href="#" class="footer-link">Teclado e Mouse</a></li>
+            <li><a href="#" class="footer-link">Computadores</a></li>
+            <li><a href="#" class="footer-link">Placa de video</a></li>
+            <li><a href="#" class="footer-link">Monitores</a></li>
+            <li><a href="#" class="footer-link">Consoles e Games</a></li>
+            <li><a href="#" class="footer-link">Notebook</a></li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Novidades e Promoções</h3>
+              </li>
+              <li><a href="#" class="footer-link">Seja Prime</a></li>
+              <li><a href="#" class="footer-link">Pix</a></li>
+          </ul>
+
+        <ul class="footer-list">
+          <li>
+              <h3>Institucional</h3>
+          </li>
+          <li>
+              <a href="#" class="footer-link">Sobre a SURGE GAMES</a>
+          </li>
+          <li>
+              <a href="#" class="footer-link">App</a>
+          </li>
+      </ul>
+
+        <ul class="footer-list">
+          <li>
+              <h3>Minha conta</h3>
+          </li>
+          <li><a href="#" class="footer-link">Meu Perfil</a></li>
+          <li><a href="#" class="footer-link">Meus Pedidos</a></li>
+        </ul>
+
+        <div id="footer_contacts">
+          <h3>Medias Sociais</h3>
+          <div id="footer_social_media">
+              <a href="#" class="footer-link" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" class="footer-link" id="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" class="footer-link" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="footer-link" id="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+          </div>
+      </div>
+
+      <div>
+      <ul class="footer-list">
+        <li>
+            <h3>Atendimento</h3>
+        </li>
+        <li><a href="#" class="footer-link">Horário de atendimento:08:00 às 20:00 -Segunda a Sábado,horário de Brasília(Exceto domingo e feriados)</a></li>
+            <li><a href="#" class="footer-link">Endereço: 
+                  Rua Lorem Ipsum, #### -#° Lorem - Ipsum/RS - CEP: ######-###</a></li>
+    </ul>
+
+    <ul class="footer-list">
+      <li>
+          <h3>Central SAC:</h3>
+      </li>
+      <li><a href="#" class="footer-link">(##) # ####-####</a></li>
+  </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3>E-Mail:</h3>
+          </li>
+          <li><a href="#" class="footer-link">lorems23@suregames.com</a></li>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+      <div class="cert text-center" style="background-color: white;">
+        <img src="./img/certigicado-googlepng.png">
+      </div>
+      <div id="footer_copyright">
+        SUREGAMES® é uma marca registrada de SURE S.A | CNPJ: ##.###.###/####-## | Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem
+        ser alterados sem prévio aviso. O SURGEGAMES não é responsável por erros descritivos. As fotos contidas nesta página são meramente ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante. Este site trabalha 100% em criptografia SSL.  Clique aqui e veja as políticas de nossa empresa.
+      </div>
+  </footer>
+
+    
+    
+
+    <script src="./JS/script.js"></script>
+    <script src="./JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./Bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
